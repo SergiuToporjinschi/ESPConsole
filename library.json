@@ -17,6 +17,6 @@
         "espressif32"
     ],
     "dependencies": {
-        "lennarthennigs/ESP Telnet ": "1.1.1"
+        "lennarthennigs/ESP Telnet": "1.1.1"
     }
 }
