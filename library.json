@@ -1,0 +1,22 @@
+{
+    "name": "ESPConsole",
+    "version": "1.0.0",
+    "license": "GPL-3.0-only",
+    "description": "",
+    "keywords": "ESP32, Console, Telnet",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SergiuToporjinschi/ESPConsole.git"
+    },
+    "authors": {
+        "name": "Sergiu Toporjinschi",
+        "maintainer": true
+    },
+    "frameworks": "arduino",
+    "platforms": [
+        "espressif32"
+    ],
+    "dependencies": {
+        "lennarthennigs/ESP Telnet ": "1.1.1"
+    }
+}
