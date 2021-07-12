@@ -15,3 +15,6 @@ void ESPConsole::init(Stream *strm)
 {
     Console = strm;
 }
+void ESPConsole::initTelNet()
+{
+}

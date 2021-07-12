@@ -12,6 +12,7 @@ private:
 public:
     static void init(Stream *strm);
     static void initSerial(unsigned long boundRate);
+    static void initTelNet();
 };
 
 #if !defined(NO_GLOBAL_INSTANCES) && !defined(NO_GLOBAL_SERIAL)
