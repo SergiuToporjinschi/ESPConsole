@@ -5,7 +5,13 @@ ESPConsole consoleInit;
 
 void setup()
 {
-  consoleInit.initSerial(115200);
+  WiFi.mode(WIFI_STA);
+  WiFi.setAutoReconnect(true);
+  WiFi.persistent(true);
+  WiFi.begin("zDay", "WiFi4MeToo");
+  Serial.begin(115200);
+
+  consoleInit.initTelNet();
   Console->println("Setup...");
 }
 

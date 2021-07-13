@@ -1,18 +1,25 @@
 #ifndef Console_h
 #define Console_h
 #include <Arduino.h>
-#include <ESPTelnet.h>
+#include <ESPTelnetExt.h>
+
+#define OUTPUT_OTHER 0
+#define OUTPUT_SERIAL 1
+#define OUTPUT_TELNET 2
 
 class ESPConsole
 {
-private:
+public:
     ESPConsole(/* args */);
     ~ESPConsole();
+    void init(Stream *strm, uint8_t outType);
+    void initSerial(unsigned long boundRate);
+    void initTelNet();
+    void consoleLoop();
 
-public:
-    static void init(Stream *strm);
-    static void initSerial(unsigned long boundRate);
-    static void initTelNet();
+private:
+    ESPTelnetExt telnet;
+    int8_t outputType = -1;
 };
 
 #if !defined(NO_GLOBAL_INSTANCES) && !defined(NO_GLOBAL_SERIAL)
