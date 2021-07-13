@@ -1,6 +1,6 @@
 {
     "name": "ESPConsole",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "GPL-3.0-only",
     "description": "Output streamer for messages to Serial or TELNET",
     "keywords": "ESP32, Console, Telnet",
