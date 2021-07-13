@@ -4,9 +4,10 @@
     "license": "GPL-3.0-only",
     "description": "Output streamer for messages to Serial or TELNET",
     "keywords": "ESP32, Console, Telnet",
+    "homepage": "https://github.com/SergiuToporjinschi/ESPConsole",
     "repository": {
         "type": "git",
-        "url": "https://github.com/SergiuToporjinschi/ESPConsole.git"
+        "url": "https://github.com/SergiuToporjinschi/ESPConsole"
     },
     "authors": {
         "name": "Sergiu Toporjinschi",
